@@ -2,9 +2,8 @@ const contactsFile = require('./contacts.json')
 
 let allContacts = []
 
-const addContact = function(firstName, lastName, email) {
+const addContact = (firstName, lastName, email) => 
   allContacts.push([firstName, lastName, email])
-} 
 
 const addContacts = (contactData) =>
   contactData.forEach((contact) => 
